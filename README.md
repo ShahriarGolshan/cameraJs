@@ -20,10 +20,10 @@ and
    
 than we create a new object of camera
 
-	 const camera = new Camera({
-        canvasElement,
-        videoElement,
-        notSupportingLogic: noSupport
+	const camera = new Camera({
+        canvasElement: document.querySelector("#canvas"),
+        videoElement: document.querySelector("#video"),
+        notSupportingLogic: (error) => {...}
     });
     
 than execute init function
